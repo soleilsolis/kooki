@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+<body class="h-[2000px]">
+	<div id="header" class="fixed py-4 px-16 w-full flex items-center transition-all portrait:px-4">
+        <div class="flex items-center mr-16">
+            <svg class="w-8 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 277" version="1.1" preserveAspectRatio="xMidYMid">
+                <title>Medusa</title>
+                <defs>
+                    <linearGradient x1="-66.6972559%" y1="81.8702074%" x2="108.629506%" y2="34.4186803%" id="medusaLinearGradient-1">
+                        <stop stop-color="#000000" offset="26.5625%"/>
+                        <stop stop-color="#000000" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <g>
+                    <path d="M223.516603,44.823358 L161.173777,8.84957346 C140.775738,-2.94985782 115.780747,-2.94985782 95.3824043,8.84957346 L32.7517949,44.823358 C12.6410532,56.6227741 0,78.4949069 0,101.806259 L0,174.041066 C0,197.640201 12.6410532,219.224247 32.7517949,231.02336 L95.0952275,267.285565 C115.49357,279.084678 140.487651,279.084678 160.885994,267.285565 L223.229427,231.02336 C243.62777,219.224247 255.981222,197.640201 255.981222,174.041066 L255.981222,101.806259 C256.555575,78.4949069 243.914946,56.6227741 223.516603,44.823358 Z M128.134199,202.244733 C92.7966006,202.244733 64.0670996,173.465802 64.0670996,138.067554 C64.0670996,102.669002 92.7966006,73.8903751 128.134199,73.8903751 C163.471798,73.8903751 192.488779,102.669002 192.488779,138.067554 C192.488779,173.465802 163.758974,202.244733 128.134199,202.244733 Z" fill="url(#medusaLinearGradient-1)"/>
+                </g>
+            </svg>
+            <span class="font-semibold text-xl">kooki</span>
+        </div>
+
+        <nav class="ml-auto text-md font-medium text-slate-600 portrait:hidden">
+            <a class="ml-10 font-bold text-black" href="http://">Home</a>
+            <a class="ml-10" href="http://">Gallery</a>
+            <a class="ml-10" href="http://">About</a>
+            <a class="ml-10" href="http://">Contact</a>
+        </nav>
+    </div>
+
+    <div id="body">
+        <div class="bg-[url(/dist/wp.jpg)] bg-center bg-cover bg-no-repeat h-[90vh] portrait:h-[50vh] px-16 portrait:px-4 portrait:bg-right">
+            <div class="grid grid-cols-2 portrait:grid-cols-1 h-full">
+                <div class="flex items-center">
+                    <div>
+                        <h1 class="text-8xl font-bold portrait:text-6xl">unrealized innnovation.</h1>
+                        <p class="text-2xl my-5 font-medium portrait:text-lg">This is a sample description. Add more text to evoke some kind of grand message.</p>
+                        
+                        <br>
+                        
+                        <p>
+                            <a href="" class="bg-white hover:bg-gray-200 font-bold py-5 px-12 rounded-full text-sm transition-colors">VIEW COLLECTIONS</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-16 portrait:px-4">
+            
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = () => {
+            const header = document.getElementById("header");
+            document.documentElement.scrollTop < 50 ? header.classList.remove("bg-white","shadow-sm") : header.classList.add("bg-white","shadow-sm");
+        };
+    </script>
+</body>
+</html>
